@@ -1,0 +1,302 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 90px;
+    width: 100%;
+    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    background-color: #337AB7;
+    /* position: fixed; */
+}
+
+.nav img{
+    width: 179px;
+    height: 47px;
+}
+
+.nav .rnav{
+    height: 90px;
+    width: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3vw;
+    /* display: none; */
+}
+.nav a{
+    text-decoration: none;
+    padding: .4vw .3vw;
+    font-size: 1.2vw;
+    color: #fff;
+}
+.rnav_hide a{
+    text-decoration: none;
+    padding: 1vw .3vw;
+    font-size: 1.5vw;
+    color: #fff;
+}
+.nav i{
+    display: none;
+    padding: 10px;
+    font-size: 2.8vw;
+    color: #888888;
+    border-radius: 5px;
+    border: 2px solid #DDDDDD;
+}
+.nav i:hover{
+    background-color: #DDDDDD;
+}
+#bg{
+    height: calc(100% - 190px); 
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.page0{
+    color: #fff;
+    position: absolute;
+    z-index: 99;
+    padding: 15vw 7vw;
+    line-height: 3.4vw;
+}
+.page0{
+    top: 40vw;
+    line-height: 1.2;
+}
+.page0 h1{
+    font-size: 4vw;
+}
+.page0 button{
+    color: #fff;
+    background-color: #337AB7;
+    font-size: 1.4vw;
+    padding: 1.2vw 2.3vw;
+}
+#page1{
+    width: 100%;
+    height: 100vh;
+}
+
+.adv{
+    width: 100%;
+    height: 50vh;
+    background-color: #F9F9F9;
+    padding: 25px 100px;
+}
+
+.adv h1{
+    margin: 15px 0;
+    text-align: center;
+    color: #800080;
+}
+.adv p{
+    margin: 10px 0;
+    line-height: 2.3vw;
+    font-size: 1.2vw;
+}
+
+.log_in{
+    width: 100%;
+    height: 50vh;
+    padding: 25px 120px;
+    background-color: #292929;
+    display: flex;
+
+}
+
+.log_in .l_part{
+    width: 65%;
+}
+.log_in ul{
+    margin-top: 3vh;
+    display: flex;
+    list-style: none;
+    color: #fff;
+    gap: 25px;
+    font-size: 1.1vw;
+}
+.log_in h2{
+    padding: 8px 0;
+    color: #B3B9BF;
+}
+.log_in form{
+    display: flex;
+    flex-direction: column;
+}
+#username, #pass, #submit{
+    margin: 5px 0;
+    padding: 5px 0;
+    height: 2.5vw;
+    border: none;
+    border-radius: 3px;
+    color: #B3B9BF;
+}
+#username::placeholder, #pass::placeholder{
+    color: #337AB7;
+}
+#username{
+    border-bottom: 1px solid #595959 ;
+    outline: none;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+#username:focus{
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+#submit{
+    transition: all .5s ease;
+    color: #fff;
+    background-color: #2793FD;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: #337ab7;
+}
+.log_in .r_part{
+    width: 33%;
+    color: #fff;
+    padding-left: 35px;
+}
+.address h1{
+    margin: 30px 0;
+}
+i{
+    font-size: 1.1vw;
+}
+i span{
+    color: #989898;
+    line-height: 10px;
+    margin-left: 20px;
+}
+
+footer{
+    height: 65px;
+    padding: 25px 100px;
+    background-color: #337AB7;
+    letter-spacing: 0.7px;
+}
+
+footer p{
+    font-size: 0.92vw;
+    color: #fff;
+}
+footer span{
+    font-size: 1.2vw;
+    color: #000;
+}
+@media (max-width:767px) {
+    .nav{
+        width: 100%;
+        height: 90px;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        overflow: hidden;
+    }
+    
+    .nav .rnav{
+        position: fixed;
+        width: 90%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        background-color: #337AB7;
+        transition: all .70s ease;
+        border-top: 2px solid #337AB7;
+        top: -100%;
+    }
+    .rnav.on{
+        top: 70px;
+
+    }
+    .nav img{
+        width: 163px;
+        height: 42px;
+    }
+    .nav i{
+        display: block;
+    }
+    #bg{
+        height: 370px; 
+    }
+    #dev{
+        margin-top: 10px;
+    }
+    .page0 h1{
+        font-size: 8vw;
+    }
+    .page0 button{
+        color: #fff;
+        background-color: #337AB7;
+        border: none;
+        font-size: 5.4vw;
+        padding: 3.5vw 6.5vw;
+    }
+    .adv{
+        height: 90vh;
+        font-size: 3.5vw;
+        padding: 25px 18px;
+    }
+    .adv p{
+        line-height: 9vw;
+        font-size: 4vw;
+    }
+
+
+    .log_in{
+        height: 80vh;
+        padding: 0 4vw;
+        flex-direction: column;
+    }
+    .log_in .l_part {
+        line-height: 1;
+        padding: 30px 0;
+        /* background-color: red; */
+        width: 100%;
+    }
+    .log_in ul {
+        gap: 30px;
+        font-size: 4.1vw;
+        overflow-x: scroll;
+    }
+    #username, #pass, #submit{
+        height: 8.5vw;
+    }
+
+    .log_in .r_part{
+        padding: 30px 0;
+        width: 100%;
+    }
+    .address h1{
+        margin: 30px 0;
+    }
+    i{
+        font-size: 4.1vw;
+    }
+    footer{
+        height: 90px;
+        padding: 6.4vw 5.5vw;
+        letter-spacing: 0.7px;
+    }
+    
+    footer p{
+        text-align: center;
+        font-size: 4vw;
+        color: #fff;
+    }
+    footer span{
+        font-size: 4.2vw;
+        color: #000;
+    }
+}

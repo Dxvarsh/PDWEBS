@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.D.Pandya Institute Of Computer Applications</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="https://pdpandyabca.com/images/banner1.png" alt="">
+            <div class="rnav">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Infrastucture</a>
+                <a href="#">Alumani</a>
+                <a href="#">Event</a>
+                <a href="#">News</a>
+                <a href="#">Contect Us</a>
+            </div>
+            
+            <i class="ri-menu-fill" id="icon"></i>
+        </div>
+        <div class="page0">
+            <h1 class="head" id="dev">Education</h1>
+            <p id="dev">Education is the passport to the future, for tomorrow belongs to those who prepare for it today</p>
+            <button id="dev">Read More ></button>
+        </div>    
+        <img src="https://pdpandyabca.com/images/banner.jpg" alt="" id="bg">
+        <div id="page1">
+            <section class="adv">
+                <h1 class="PD">Welcome to P.D.Pandya Institute of computer Application</h1>
+                <p class="text">P.D.Pandya Institute of ComputerApplication, a self financed institution, was found in the year2001, by the most trusted and philanthropic educational trust Meghdoot Education Trust to fulfill the demand of IT professionals in Gujarat and Western Region. <br><br>
+                P.D.Pandya Institute of Computer Application is constituent institute of Gujarat University. Gujarat University formed under Gujarat State Act No. 8 of 2009, Govt. of Gujarat. The institute is situated sprawling in Ghodasar, Ahmedabad.</p>
+            </section>
+            <div class="log_in">
+                <div class="l_part">
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Infrastucture</li>
+                        <li>Alumani</li>
+                        <li>Event</li>
+                        <li>News</li>
+                        <li>Contect Us</li>
+                    </ul>
+                    <h2>Student Log in</h2>
+                    <form action="">
+                        <input type="text" name="" id="username" placeholder="Username" style="padding-left: 8px;">
+                        <input type="password" name="" id="pass" placeholder="password" style="padding-left: 8px;">
+                        <input type="submit" value="SIGN IN" id="submit">
+                    </form>
+                </div>
+                <div class="r_part">
+                    <section class="address">
+                        <h1>Address</h1>
+                            <span class="phone">
+                                <i class="ri-map-pin-2-fill"><span>P.D.Pandya Collage Campus, Muktjeevan Smruti Mandir Road, Ghodasar , Ahmedabad-382445</span></i> <br> <br> <br>
+                                <i class="ri-phone-fill"><span>+91 ##########, +91 ##########</span></i>
+                            </span>
+                    </section>
+                </div>
+            </div>
+            <div class="foot">
+                <footer><p>© 2017 PDPICA. All rights reserved | Design & Devloped by <span>Zingur.</span></p></footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let navlist = document.querySelector('.rnav');
+        let menu = document.querySelector('#icon');
+        menu.onclick = () =>{
+
+            navlist.classList.toggle('on');
+        }
+        /* function menu(){
+            navlist.classList.toggle('on');
+        } */
+    </script>
+</body>
+</html>
