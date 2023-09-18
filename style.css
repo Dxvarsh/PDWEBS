@@ -301,6 +301,7 @@ footer span{
         gap: 30px;
         font-size: 4.1vw;
         overflow-x: scroll;
+        overflow-y: hidden;
     }
     #username, #pass, #submit{
         height: 8.5vw;
