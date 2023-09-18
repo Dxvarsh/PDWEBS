@@ -123,6 +123,7 @@ html, body{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.21);
 }
 #page2 h3{
+    text-align: center;
     margin: 100px;
     color: #595959;
 }
